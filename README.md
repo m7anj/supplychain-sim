@@ -27,5 +27,3 @@ uv run uvicorn main:app --reload
 cd app
 npm run dev
 ```
-
-*a script to get this working with one click would be ideal, since these two technologies are universally ran*.
