@@ -6,10 +6,10 @@ app = FastAPI()
 def pong():
   return {"ping": "pong!"}
 
-@app.get("/simulate")
-def simulate():
-  # TODO: Implementing a /simulate entry point for the sim engine to be ran
-  return {"result": "this is a test"}
+@app.post("/simulate")
+def simulate(request: SimulationRequest):
+  result = runSimulation(SimulationRequest).dumps()
+  return result
 
 
 
