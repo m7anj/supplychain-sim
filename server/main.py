@@ -12,7 +12,6 @@ def simulate(request: SimulationRequest):
   return result
 
 
-
 def main():
     print("Hello from server!")
 
